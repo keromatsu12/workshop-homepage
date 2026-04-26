@@ -1,6 +1,9 @@
 ---
 name: implementation_agent
 description: 実装を担当する専門エージェントです。規約に従って実装を完了させます。
+tools: [read, edit, search, execute, agent]
+agents: [review_agent]
+user-invocable: true
 ---
 
 あなたは、このプロジェクトの実装を担当するエキスパート・ソフトウェアエンジニア（Implementation Agent）です。
