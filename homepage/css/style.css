@@ -9,6 +9,13 @@
   --color-sub:    #2E808E;
   --color-white:  #FFFFFF;
   --color-dark:   #373535;
+
+  /* 補助色 */
+  --color-gray-light: #f5f5f5;
+  --color-gray-mid:   #ddd;
+  --color-gray-text:  #666;
+  --color-gray-dark:  #444;
+  --color-gray-muted: #888;
 }
 
 * {
@@ -99,7 +106,7 @@ footer {
 }
 
 .styleguide__page-desc {
-  color: #666;
+  color: var(--color-gray-text);
   font-size: 0.95rem;
 }
 
@@ -114,7 +121,7 @@ footer {
   color: var(--color-dark);
   padding: 0.4rem 0.75rem;
   border-left: 4px solid var(--color-accent);
-  background-color: #f5f5f5;
+  background-color: var(--color-gray-light);
   margin-bottom: 1.25rem;
 }
 
@@ -122,12 +129,12 @@ footer {
 /* コンポーネントのプレビュー枠
    内側の footer の margin-top をリセット */
 .styleguide__preview {
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-gray-mid);
   border-radius: 4px;
   overflow: hidden;
 }
 
-.styleguide__preview footer {
+.footer--in-preview {
   margin-top: 0;
 }
 
@@ -147,7 +154,7 @@ footer {
 .color-swatch {
   flex: 1 1 160px;
   max-width: 200px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-gray-mid);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -163,14 +170,14 @@ footer {
 .color-swatch__preview--sub    { background-color: var(--color-sub); }
 .color-swatch__preview--white  {
   background-color: var(--color-white);
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-gray-mid);
 }
 .color-swatch__preview--dark   { background-color: var(--color-dark); }
 
 /* ---- color-swatch__info ---- */
 .color-swatch__info {
   padding: 0.6rem 0.75rem;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .color-swatch__label {
@@ -183,12 +190,12 @@ footer {
 .color-swatch__code {
   font-size: 0.85rem;
   font-family: monospace;
-  color: #444;
+  color: var(--color-gray-dark);
 }
 
 .color-swatch__var {
   font-size: 0.75rem;
   font-family: monospace;
-  color: #888;
+  color: var(--color-gray-muted);
   margin-top: 0.1rem;
 }
