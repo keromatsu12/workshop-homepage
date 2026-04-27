@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>スタイルガイド | Workshop Homepage</title>
+  <meta property="og:title" content="スタイルガイド | Workshop Homepage">
+  <meta property="og:description" content="Workshop Homepageで使用するUIコンポーネントの一覧です。">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main class="styleguide">
 
     <!-- スタイルガイド ページヘッダー -->
-    <div class="styleguide__page-header">
+    <header class="styleguide__page-header">
       <h1 class="styleguide__page-title">スタイルガイド</h1>
       <p class="styleguide__page-desc">Workshop Homepage で使用する UI コンポーネントの一覧です。</p>
-    </div>
+    </header>
 
     <!-- ==============================
          1. カラーパレット
@@ -24,7 +27,8 @@
       <div class="color-palette">
 
         <article class="color-swatch">
-          <div class="color-swatch__preview color-swatch__preview--main"></div>
+          <div class="color-swatch__preview color-swatch__preview--main"
+               role="img" aria-label="メインカラー #52899A のプレビュー"></div>
           <div class="color-swatch__info">
             <p class="color-swatch__label">メインカラー</p>
             <p class="color-swatch__code">#52899A</p>
@@ -33,7 +37,8 @@
         </article>
 
         <article class="color-swatch">
-          <div class="color-swatch__preview color-swatch__preview--accent"></div>
+          <div class="color-swatch__preview color-swatch__preview--accent"
+               role="img" aria-label="アクセントカラー #E0700B のプレビュー"></div>
           <div class="color-swatch__info">
             <p class="color-swatch__label">アクセントカラー</p>
             <p class="color-swatch__code">#E0700B</p>
@@ -42,7 +47,8 @@
         </article>
 
         <article class="color-swatch">
-          <div class="color-swatch__preview color-swatch__preview--sub"></div>
+          <div class="color-swatch__preview color-swatch__preview--sub"
+               role="img" aria-label="サブカラー #2E808E のプレビュー"></div>
           <div class="color-swatch__info">
             <p class="color-swatch__label">サブカラー</p>
             <p class="color-swatch__code">#2E808E</p>
@@ -51,7 +57,8 @@
         </article>
 
         <article class="color-swatch">
-          <div class="color-swatch__preview color-swatch__preview--white"></div>
+          <div class="color-swatch__preview color-swatch__preview--white"
+               role="img" aria-label="テキスト・UIカラー（白）#FFFFFF のプレビュー"></div>
           <div class="color-swatch__info">
             <p class="color-swatch__label">テキスト・UIカラー（白）</p>
             <p class="color-swatch__code">#FFFFFF</p>
@@ -60,7 +67,8 @@
         </article>
 
         <article class="color-swatch">
-          <div class="color-swatch__preview color-swatch__preview--dark"></div>
+          <div class="color-swatch__preview color-swatch__preview--dark"
+               role="img" aria-label="ダークカラー #373535 のプレビュー"></div>
           <div class="color-swatch__info">
             <p class="color-swatch__label">ダークカラー</p>
             <p class="color-swatch__code">#373535</p>
@@ -79,7 +87,7 @@
 
       <div class="styleguide__preview">
         <header>
-          <h1>Workshop Homepage</h1>
+          <p aria-hidden="true">Workshop Homepage</p>
           <nav>
             <ul>
               <li><a href="#">ホーム</a></li>
@@ -99,7 +107,7 @@
 
       <div class="styleguide__preview">
         <section class="hero">
-          <h2>ようこそ</h2>
+          <p aria-hidden="true">ようこそ</p>
           <p>Workshop Homepageへようこそ。</p>
         </section>
       </div>
@@ -112,7 +120,7 @@
       <h2 class="styleguide__section-title" id="sg-footer">フッター</h2>
 
       <div class="styleguide__preview">
-        <footer>
+        <footer class="footer--in-preview">
           <p>&copy; 2026 Workshop Homepage</p>
         </footer>
       </div>
